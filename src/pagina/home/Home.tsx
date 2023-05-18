@@ -1,12 +1,12 @@
 import React from "react";
 import "./Home.css"
-function home() {
+function Home() {
   return (
-    
+
     <>
       <h1> teste</h1>
     </>
   );
 }
 
-export default home;
+export default Home;
