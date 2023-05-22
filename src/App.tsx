@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-rou
 import Footer from "./components/estaticos/footer/Footer";
 import Navbar from "./components/estaticos/navbar/Navbar";
 import Home from "./pagina/home/Home";
-import "./App.css";
-
+import "./App.css";             
 import Login from "./pagina/login/Login";
+import CadastroUsuario from "./pagina/cadastroUsuario/CadastroUsuario";
 
-
+  
 
 function App() {
   return(
@@ -18,6 +18,7 @@ function App() {
     <Route path="/home" element={<Home />} />
     <Route path="/" element={<Login />} />
     <Route path="/login" element={<Login />} />
+    <Route path="/cadastrousuario" element={<CadastroUsuario />} />
     </Routes>
     </div>
     <Footer />
