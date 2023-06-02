@@ -45,6 +45,12 @@ function Login() {
         }
 
     return (
+        <Grid
+        container
+        justifyContent="center"
+        alignItems="center"
+        className="imagem"
+      >
         <Grid container direction='row' justifyContent='center' alignItems='center'>
             <Grid alignItems='center' xs={6}>
                 <Box paddingX={20}>
@@ -69,8 +75,6 @@ function Login() {
                     </Box>
                 </Box>
             </Grid>
-            <Grid xs={6} className='imagem'>
-
             </Grid>
         </Grid>
     );
