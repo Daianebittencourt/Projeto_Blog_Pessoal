@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/estaticos/navbar/Navbar';
@@ -13,9 +14,8 @@ import CadastroUsuario from './pagina/cadastroUsuario/CadastroUsuario';
 import ListaTema from './components/temas/listaTema/ListaTema';
 import ListaPostagem from './components/postagens/listaPostagem/ListaPostagem';
 
-
-
 function App() {
+
   return (
     <Router>
       <Navbar />
