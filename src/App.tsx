@@ -13,10 +13,13 @@ import Home from './pagina/home/Home';
 import CadastroUsuario from './pagina/cadastroUsuario/CadastroUsuario';
 import ListaTema from './components/temas/listaTema/ListaTema';
 import ListaPostagem from './components/postagens/listaPostagem/ListaPostagem';
+import { Provider } from 'react-redux';
+import store from './store/store';
 
 function App() {
 
   return (
+    <Provider store={store}>
     <Router>
       <Navbar />
       <div style={{ minHeight: '100vh' }}>
@@ -52,6 +55,7 @@ function App() {
       <Footer />
 
     </Router>
+    </Provider>
   );
 }
 
