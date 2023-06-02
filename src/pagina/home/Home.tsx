@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
 import TabPostagem from '../../components/postagens/tabPostagem/TabPostagem';
+import { Link } from 'react-router-dom';
 
 function Home() {
 
@@ -34,7 +35,9 @@ function Home() {
                         <Box marginRight={1}>
                             <ModalPostagem />
                         </Box>
+                        <Link to="/postagens">
                         <Button variant="outlined" className='botao'>Ver Postagens</Button>
+                        </Link>
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
